@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+    background-color: #f5b041;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* TARJETAS */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* BOTONES */
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+/* ACCESIBILIDAD */
+a:focus, button:focus {
+    outline: 3px solid #000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
