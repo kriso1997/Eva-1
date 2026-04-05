@@ -1,32 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Fondo ligeramente gris para que las tarjetas resalten */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f8f8; /* Fondo principal oscuro, muy elegante */
+    color: #000000; /* Texto claro para contraste */
 }
 
-/* HERO */
+/* HERO - Gradiente nocturno sofisticado */
 .hero {
-    /* Reemplazamos el mostaza sólido por un gradiente oscuro para mejor contraste con texto blanco */
-    background: linear-gradient(135deg, #2c3e50, #34495e);
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     color: white;
-    padding: 60px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 70px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
-/* TARJETAS */
+/* TARJETAS - Modo oscuro */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid #333; /* Borde sutil */
+    background-color: #1e1e1e; /* Ligeramente más claro que el fondo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    color: #f8f9fa;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Movimiento vertical es más elegante que scale */
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(111, 66, 193, 0.2); /* Resplandor morado sutil al pasar el mouse */
+}
+
+.card-title {
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #b0b0b0;
+}
+
+/* BOTONES Y ACENTOS - Reemplazando el 'btn-danger' de Bootstrap */
+.btn-danger {
+    background-color: #6f42c1; /* Morado vibrante / Magenta oscuro */
+    border-color: #6f42c1;
+}
+
+.btn-danger:hover {
+    background-color: #59359a;
+    border-color: #59359a;
+}
+
+.btn-outline-danger {
+    color: #c71212; /* Acento rosa/magenta para botones secundarios */
+    border-color: #f00a0a;
+}
+
+.btn-outline-danger:hover {
+    background-color: #f00c0c;
+    color: white;
+}
+
+/* SECCIÓN BENEFICIOS (Para reemplazar el bg-light) */
+.bg-light {
+    background-color: #1a1a1a !important; /* Sobrescribimos el fondo claro de Bootstrap */
+}
+
+.text-muted {
+    color: #888 !important;
+}
+
+/* LISTAS DE CONSEJOS */
+.list-group-item {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-color: #333;
 }
 
 /* ACCESIBILIDAD */
 a:focus, button:focus {
-    outline: 3px solid #3498db;
+    outline: 3px solid #ff0c0c;
     outline-offset: 2px;
 }
