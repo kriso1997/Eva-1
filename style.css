@@ -1,36 +1,32 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo ligeramente gris para que las tarjetas resalten */
 }
 
 /* HERO */
 .hero {
-    background-color: #f5b041;
-    padding: 40px;
+    /* Reemplazamos el mostaza sólido por un gradiente oscuro para mejor contraste con texto blanco */
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 60px 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 /* TARJETAS */
 .card {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .card:hover {
-    transform: scale(1.05);
-}
-
-/* BOTONES */
-.btn-danger {
-    background-color: #e74c3c;
+    transform: translateY(-5px); /* Movimiento vertical es más elegante que scale */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
 /* ACCESIBILIDAD */
 a:focus, button:focus {
-    outline: 3px solid #000;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem;
-    }
+    outline: 3px solid #3498db;
+    outline-offset: 2px;
 }
